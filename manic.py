@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 def run_bot():
     load_dotenv()
-    TOKEN = "MTIzMzgwNDIzMjAxMjk5MjY0Mg.GKs_LZ.3fCaR_pWM96sRqYJCF52M48aXycEnoVzXMEvBM"
+    TOKEN = "token"
 
     intents = discord.Intents.default()
     intents.message_content= True
@@ -82,4 +82,4 @@ def run_bot():
         await ctx.send("Song added to queue")
 
             
-    client.run("MTIzMzgwNDIzMjAxMjk5MjY0Mg.GKs_LZ.3fCaR_pWM96sRqYJCF52M48aXycEnoVzXMEvBM")
+    client.run(TOKEN)
